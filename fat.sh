@@ -6,11 +6,8 @@ WORKDIR=$PWD
 PROG_NAME=$(basename "${0%%.sh}")
 TMP_DIR="/tmp/__${PROG_NAME}_$$"
 
-sighandler() {
-	rm -rfv $TMP_DIR
-}
-
-printUsage()  { echo "Usage: [-t xz|gz|bz2 ] [-f file ]"; }
+sighandler()  { rm -rf $TMP_DIR; }
+printUsage()  { echo "Usage: [-t xz|gz|bz2 ] [-f target ]"; }
 default_err() { echo "$PROG_NAME Error: ${FUNCNAME[1]}() at line ${1}" >&2; exit 2; }
 perror()      { echo "$PROG_NAME \"$1\": $2" >&2 ; } 
 
