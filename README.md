@@ -14,4 +14,4 @@ touch $FILENAME
 ./$FILENAME.fat
 ```
 
-###### Copyright © 2017, [Manu-sh](https://github.com/Manu-sh), s3gmentationfaul@gmail.com. Released under the [GPL3 license](LICENSE).
+###### Copyright © 2017, [Manu-sh](https://github.com/Manu-sh), s3gmentationfault@gmail.com. Released under the [GPL3 license](LICENSE).
